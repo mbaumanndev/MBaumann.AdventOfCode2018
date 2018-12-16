@@ -2,8 +2,6 @@
 
 [<EntryPoint>]
 let main argv =
-    File.ReadAllLines("input")
-    |> Array.map(fun l -> int l)
-    |> Array.sum
+    (Array.sumBy (int) (File.ReadAllLines("input")))
     |> printfn "%i"
     0
