@@ -1,10 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="Program.fs" />
-    <None Include="input" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="Part1.fs" />
+    <Compile Include="Part2.fs" />
   </ItemGroup>
+
 </Project>
